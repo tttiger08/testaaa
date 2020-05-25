@@ -1,8 +1,18 @@
 <template>
     <div class="contain">
       <div class="hd">
-        <i class="iconfont icon-qiehuanlie"></i>
-        <span>广州艾乐教育品牌管理有限公司</span>
+        <i class="iconfont icon-qiehuanlie" @click="showPopup"></i>
+        <van-popup v-model="show" round position="bottom" :overlay="true" >
+        <van-picker
+          show-toolbar
+          title="园区切换"
+          :columns="columns"
+          @cancel="onCancel"
+          @confirm="onConfirm"
+          @change="onChange"
+        />
+    </van-popup>
+        <span>{{message}}</span>
       </div>
       <div class="my-items">
         <span>我的事项</span>
@@ -123,8 +133,6 @@
           </div>
         </div>
       </div>
-
-
     </div>
 </template>
 
@@ -134,9 +142,28 @@
 export default {
     data() {
         return {
+          message:"请选择代理区域",
+          columns: ["广州艾乐教育品牌管理有限公司", "广州", "温州", "嘉兴", "湖州"],
+          show: false
         }
     },
-    
+    methods: {
+
+      onChange(value) {
+        this.message = value
+      },
+      onConfirm(value) {
+        this.message = value
+        this.show = false
+      },
+
+      onCancel() {
+        this.show = false
+      },
+      showPopup() {
+        this.show = true;
+      }
+    }    
 };
 </script>
 

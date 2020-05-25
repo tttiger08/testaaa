@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="main">
     <router-view></router-view>
     <div class="footer">
       <router-link tag="div" to="/item">
@@ -15,8 +15,8 @@
           <span>资料库</span>
         </div>
       </router-link>
-      <router-link tag="div" to="/home">
-        <div>
+      <router-link tag="div" to="/home" >
+        <div >
           <i class="iconfont icon-wode"></i>
           <span>我的</span>
         </div>
@@ -27,27 +27,40 @@
 
 <script>
 export default {
-  
+
 };
 </script>
-<style >
+
+<style scoped>
+.main {
+  height: 17.786667rem;
+}
 .footer {
+
   border-top: 1px solid #eeeeee;
   display: flex;
   justify-content: space-around;
-  height: 1.333333rem;
+  height: 1.466667rem;
   padding-top: 0.133333rem;
   background-color: #ffffff;
+  position: fixed;
+  bottom: 0;
+  width: 10rem;
 }
 .footer div {
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
+  
 }
 .footer i {
   font-size: 0.466667rem;
 }
+.footer span {
+  font-size: .24rem;
+}
+
 .router-link-active {
   color: #4CC172;
 }

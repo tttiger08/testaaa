@@ -6,6 +6,76 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "9472097",
+      "name": "消息",
+      "font_class": "xiaoxi",
+      "unicode": "e63c",
+      "unicode_decimal": 58940
+    },
+    {
+      "icon_id": "2380652",
+      "name": "删除",
+      "font_class": "shanchu",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "4880139",
+      "name": "编辑",
+      "font_class": "bianji",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "7644440",
+      "name": "添加",
+      "font_class": "tianjia",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "4574390",
+      "name": "子账号管理",
+      "font_class": "zizhanghaoguanli",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "4842368",
+      "name": "客服",
+      "font_class": "kefu",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "9616017",
+      "name": "时间 ",
+      "font_class": "shijian",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "11569564",
+      "name": "下载",
+      "font_class": "xiazai",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "13637008",
+      "name": "下载1",
+      "font_class": "xiazai1",
+      "unicode": "e64f",
+      "unicode_decimal": 58959
+    },
+    {
+      "icon_id": "14296077",
+      "name": "消息",
+      "font_class": "78",
+      "unicode": "e6c4",
+      "unicode_decimal": 59076
+    },
+    {
       "icon_id": "790549",
       "name": "我的",
       "font_class": "wode",
